@@ -120,26 +120,28 @@
         </section>
         <section class="contact-container" id="Contact">
 
-            <form action="https://api.web3forms.com/submit">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="2f0f185b-3faf-427d-bcae-b22258de5a4c
+                ">
                 <h1 class="heading">Контакт</h1>
                 <div class="form-name">
                     <div class="form-furs-name">
                         <label for="name">Име:</label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" required>
                     </div>
                     <div class="form-last-name">
                         <label for="lastname">Фамилия:</label>
-                        <input type="text" name="lastname">
+                        <input type="text" name="lastname" required>
                     </div>
                 </div>
                 <div class="form-email-number">
                     <div class="form-number">
                         <label for="number">Телефонен номор:</label>
-                        <input type="number" name="number">
+                        <input type="number" name="number" required>
                     </div>
                     <div class="form-email">
                         <label for="email">Email:</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
                     </div>
                 </div>
                 <label for="questchan">Въпроси:</label>
